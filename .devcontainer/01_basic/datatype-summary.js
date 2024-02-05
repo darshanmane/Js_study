@@ -1,4 +1,4 @@
-// # premitive --> call by value
+// # primitive --> call by value
 // 7 Types : string, number , boolean, null, undefined, symbol, BigInt
 
 const score = 100
@@ -25,7 +25,7 @@ const anotherId = Symbol('123')
 
 const bigNumber = 1332141544633414644354n
 
-// # Non Premitive -->Reference Type 
+// # Non Primitive -->Reference Type 
 //  3 types : Array, objects, Functions
 
 const heros = ["shaktiman","naagraj","doga"] //--> Array
@@ -48,3 +48,24 @@ console.log(typeof (myFunction)); //DataType --> Function
 // In Js we never defined language
 
 // Js is dynamically type 
+
+// ------------------- Memomry -----------
+
+// stack (primitive), Heap (Non Primitive)
+
+let myname = "suresh"
+let anothername = myname
+anothername = "darshan"
+console.log(myname);
+console.log(anothername);
+
+let userOne = {
+    email: "user@gmail.com",
+    upi: "user@ybl"
+}
+
+let UserTwo = userOne
+
+UserTwo.email = "suresh@gmail.com"
+console.log(userOne.email );
+console.log(UserTwo.email );
