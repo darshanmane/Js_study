@@ -15,4 +15,4 @@ let isloggedIn = false
 // boolean --> true/false
 // null --> standalone value
 // undefined --> variable delared but value is not assigned 
-// symbol 
+// symbol --> unique
