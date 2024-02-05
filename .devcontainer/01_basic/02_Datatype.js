@@ -16,3 +16,8 @@ let isloggedIn = false
 // null --> standalone value
 // undefined --> variable delared but value is not assigned 
 // symbol --> unique
+
+
+// object
+console.log(typeof(undefined)) // undefined
+console.log(typeof(null)) //  object
