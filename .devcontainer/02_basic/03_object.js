@@ -31,19 +31,19 @@ const user1 = {
 
 // freeze the object
 
-// user1.email = "suresh@google.com"
+//user1.email = "suresh@google.com"
 // Object.freeze(user1)
 // user1.email = "darshan.mane@gmail.com"
 // console.log(user1);
 
 // function
 
-user1.greeting = function(){
-    console.log("Hello Js user")
-}
-user1.greeting1 = function(){
-    console.log(`Hello Js user,${this["full name"]}`)
-}
-console.log(user1.greeting());
+// user1.greeting = function(){
+//     console.log("Hello Js user")
+// }
+// user1.greeting1 = function(){
+//     console.log(`Hello Js user,${this["full name"]}`)
+// }
+// console.log(user1.greeting());
 
-console.log(user1.greeting1());
+// console.log(user1.greeting1());
