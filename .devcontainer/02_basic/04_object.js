@@ -46,10 +46,21 @@ const users = [
     }
 ]
 // console.log(users[2].email);
-console.log(googleuser);
+// console.log(googleuser);
 
-console.log(Object.keys(googleuser));
-console.log(Object.values(googleuser));
-console.log(Object.entries(googleuser));
-console.log(googleuser.hasOwnProperty('ids'));
+// console.log(Object.keys(googleuser));
+// console.log(Object.values(googleuser));
+// console.log(Object.entries(googleuser));
+// console.log(googleuser.hasOwnProperty('ids'));
+
+// Destructure Object
+const course = {
+    coursename: "JS",
+    Price: 1000,
+    courseInstructor: "hitesh"
+}
+
+const {courseInstructor: ins} = course
+
+// console.log(ins);
 
