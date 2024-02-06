@@ -1,0 +1,44 @@
+ Javascript Execution context
+
+ 1.{} ---> Global Execution context --> this
+ 2.Function Execution context
+ 3.eval execution context
+
+ {} --> Memory creation phase or creation phase
+    ---> Execution phase
+
+    steps 
+    1. Global Execution ---> this
+    2. Memory phase 
+    val1 --> undefined
+    val2 --> undefined
+    addnum --> defination
+    result1--> undefined
+    result2 --> undefined
+
+    3. Execution phase
+    val1 --> 10
+    val2 --> 5
+    addnum --> new variable environment + Execution thread --> (after the execution it will get delete)
+
+
+    let val1=10
+    let val2=5
+    addnum(val1,val2) --> function call
+    Memory phase-->         Execution context-->
+    val1 --> undefined      num1-->10
+    val2 --> undefined      num2-->5
+    total--> undefined      total-->15 -----> Global execution context --> this
+
+      
+      addnum(10,2) --> function call
+      new addnum --> new variable environment + Execution thread --> (after the execution it will get delete)
+
+    Memory phase-->         Execution context-->
+    val1 --> undefined      num1-->10
+    val2 --> undefined      num2-->2
+    total--> undefined      total-->15 -----> Global execution context --> this
+
+    LIFO is used JS
+
+
