@@ -27,6 +27,10 @@ map.set('IN','india')
     
 // }
 
+// for (const key in map) {
+//     console.log(key);
+// }  // there will be no output
+
 const myobj = {
     'game1' : "NFS",
     'game2' : "spiderman"
@@ -35,4 +39,6 @@ const myobj = {
 // for (const [key,value] of myobj) {
 //     console.log(key, ' :- ', value);  // object is not iterable
 // }
+
+
 
