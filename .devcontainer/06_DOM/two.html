@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Element </title>
+</head>
+<body style="background-color: black; color: whitesmoke;">
+    <ul class="language">
+        <li>javascript</li>
+    </ul>
+</body>
+<script>
+ function addlang(langname) {
+    const li = document.createElement('li');
+    li.innerHTML = `${langname}`
+    document.querySelector('.language').appendChild(li)
+    
+ }
+
+ addlang('python')
+ addlang('java')
+
+ function addoptlang(langname) {
+    const li = document.createElement('li')
+    li.appendChild(document.createTextNode(langname))
+    document.querySelector('.language').appendChild(li)
+ }
+ addoptlang('golang')
+
+ //edit
+ const secondlang = document.querySelector("li:nth-child(2)")
+ console.log(secondlang)
+ //secondlang.innerHTML = "mojo"
+ const newli = document.createElement('li')
+ newli.textContent = "mojo"
+ secondlang.replaceWith(newli)
+
+ // third element
+ const thirlang = document.querySelector("li:nth-child(3)")
+ console.log(thirlang)
+ const neli3 = document.createElement('li')
+ neli3.textContent="C#"
+ thirlang.replaceWith(neli3)
+
+ // first
+ const firstlang = document.querySelector("li:first-child")
+ firstlang.outerHTML = "<li>Typescript</li>"
+
+ // remove
+ const lastlang = document.querySelector('li:last-child')
+ lastlang.remove()
+</script>
+</html>
