@@ -1,0 +1,11 @@
+javascript 
+1 Synchronous
+2 single thread
+
+Execution Context
+
+One by one code get execute
+
+Blocking code --> block the code
+
+Non blocking code --> not block the code
