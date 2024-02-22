@@ -47,6 +47,8 @@ const users = [
 ]
 // console.log(users[2].email);
 // console.log(googleuser);
+// console.log(users);
+
 
 // console.log(Object.keys(googleuser));
 // console.log(Object.values(googleuser));
